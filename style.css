@@ -59,7 +59,9 @@ h4 {
 }
 
 .about-me-img {
-  width: min(300px, 600px);
+  width: 100%;
+  min-width: 300px;
+  max-width: 600px;
   border-radius: 50%;
 }
 
@@ -206,8 +208,8 @@ h4 {
 }
 
 .bubble_2 {
-  width: 144px;
-  height: 144px;
+  width: max(100px, 10vw);
+  height: max(100px, 10vw);
   top: 5%;
   left: 0;
 }
@@ -218,8 +220,8 @@ h4 {
   position: absolute;
   bottom: -20%;
   left: 100%;
-  width: 72px;
-  height: 72px;
+  width: 50%;
+  height: 50%;
   background: linear-gradient(303deg, #5cad8d 0%, #a0cfbc 100%);
 }
 
@@ -328,8 +330,8 @@ h4 {
 }
 
 .bubble_4 {
-  width: 320px;
-  height: 320px;
+  width: max(200px, 16vw);
+  height: max(200px, 16vw);
   top: 0;
   left: 10%;
 }
@@ -340,8 +342,8 @@ h4 {
   position: absolute;
   bottom: 0;
   left: 80%;
-  width: 112px;
-  height: 112px;
+  width: 40%;
+  height: 40%;
   background: linear-gradient(303deg, #5cad8d 0%, #a0cfbc 100%);
 }
 

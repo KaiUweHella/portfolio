@@ -14,7 +14,7 @@
         rel="stylesheet">
 
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
 
     <link rel="stylesheet" href="./style.css">
     <script src="./js/data.js"></script>
@@ -22,7 +22,7 @@
     <script src="./js/script.js"></script>
 </head>
 
-<body>
+<body onload="init()">
     <header>
 
     </header>
@@ -97,46 +97,8 @@
                     <div class="line"></div>
                 </div>
             </div>
-            <div class="ui-design-content">
-                <div class="content-box">
-                    <div class="content-img">
-                        <img src="./img/ui_design/mockup_unknown.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>unknown</h4>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut.</p>
-                        <div class="tools">
-                            <img class="tool-icon" src="./img/tools/xd.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-box">
-                    <div class="content-img">
-                        <img src="./img/ui_design/mockup_unknown.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>unknown</h4>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut.</p>
-                        <div class="tools">
-                            <img class="tool-icon" src="./img/tools/xd.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-box">
-                    <div class="content-img">
-                        <img src="./img/ui_design/mockup_unknown.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>unknown</h4>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut.</p>
-                        <div class="tools">
-                            <img class="tool-icon" src="./img/tools/xd.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+            <div class="ui-design-content" id="ui-design">
+                <!-- loaded Contentbox -->
             </div>
             <div class="design-skills">
                 <div class="skill-text">
@@ -248,85 +210,8 @@
                     <div class="line"></div>
                 </div>
             </div>
-            <div class="web-content">
-                <div class="content-box">
-                    <div class="content-img">
-                        <img src="./img/ui_design/mockup_unknown.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>unknown</h4>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut.</p>
-                        <div class="tools">
-                            <img class="tool-icon" src="./img/tools/xd.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-box">
-                    <div class="content-img">
-                        <img src="./img/ui_design/mockup_unknown.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>unknown</h4>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut.</p>
-                        <div class="tools">
-                            <img class="tool-icon" src="./img/tools/xd.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-box">
-                    <div class="content-img">
-                        <img src="./img/ui_design/mockup_unknown.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>unknown</h4>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut.</p>
-                        <div class="tools">
-                            <img class="tool-icon" src="./img/tools/xd.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-box">
-                    <div class="content-img">
-                        <img src="./img/ui_design/mockup_unknown.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>unknown</h4>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut.</p>
-                        <div class="tools">
-                            <img class="tool-icon" src="./img/tools/xd.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-box">
-                    <div class="content-img">
-                        <img src="./img/ui_design/mockup_unknown.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>unknown</h4>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut.</p>
-                        <div class="tools">
-                            <img class="tool-icon" src="./img/tools/xd.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-box">
-                    <div class="content-img">
-                        <img src="./img/ui_design/mockup_unknown.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>unknown</h4>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut.</p>
-                        <div class="tools">
-                            <img class="tool-icon" src="./img/tools/xd.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+            <div class="web-content" id="web-development">
+                <!-- loaded Contentbox -->
             </div>
             <div class="web-skills">
                 <div class="skill-text">
@@ -432,25 +317,8 @@
                 </div>
             </div>
             <div class="creative-content">
-                <div class="creative-content-column">
-                    <div class="creative-img">
-                        <img src="./img/creative/fotoshoot_3.jpg" alt="">
-                    </div>
-                    <div class="creative-img">
-                        <img src="./img/creative/cover_1.jpg" alt="">
-                    </div>
-                    <div class="creative-img">
-                        <img src="./img/creative/cover_2.jpg" alt="">
-                    </div>
-                    <div class="creative-img">
-                        <img src="./img/creative/fotoshoot_1.jpg" alt="">
-                    </div>
-                    <div class="creative-img">
-                        <img src="./img/creative/merch.jpg" alt="">
-                    </div>
-                    <div class="creative-img">
-                        <img src="./img/creative/fotoshoot_2.jpg" alt="">
-                    </div>
+                <div class="creative-content-column" id="creative">
+                    <!-- loaded images -->
                 </div>
             </div>
 

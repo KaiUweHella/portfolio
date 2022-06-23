@@ -3,6 +3,7 @@
   --color-secondary: #a0cfbc;
   --color-tertiary: #cfe6dd;
   --color-font: #262626;
+  --color-overlay: hsla(156, 33%, 52%, 0.8);
 }
 
 * {
@@ -69,10 +70,6 @@ h4 {
   min-width: 300px;
   position: relative;
 }
-
-/* .about-me-text p {
-  width: max(100%, 400px);
-} */
 
 .bubble {
   position: absolute;
@@ -259,7 +256,7 @@ h4 {
   box-shadow: 0 0 0 100vmax var(--color-secondary);
   clip-path: inset(0 -100vmax);
   margin-bottom: max(120px, 10vw);
-  max-width: 600px;
+  max-width: 920px;
 }
 
 .divider h3 {
@@ -409,6 +406,57 @@ h4 {
   object-fit: cover;
   border-radius: 8px;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                Overlay Links                               */
+/* -------------------------------------------------------------------------- */
+
+.overlay-links{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 6px;
+  background-color: var(--color-overlay);
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.overlay-links:hover{
+  opacity: 1;
+}
+
+.overlay-links svg{
+  width: clamp(3.75rem, 3rem + 3.75vw, 7.5rem);
+  fill: white;
+}
+
+.overlay-links a{
+  opacity: 0.8;
+  transition: all 150ms ease-in-out;
+}
+
+.overlay-links a:hover {
+ opacity: 1;
+ transform: scale(1.025);
+}
+
+.vertical-line{
+  opacity: 0.8;
+  border-radius: 100vmax;
+  width: 4px;
+  height: clamp(3.75rem, 3rem + 3.75vw, 7.5rem);
+  background-color: white;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   @media                                   */
+/* -------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 900px) {
   .creative-content-column {

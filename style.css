@@ -13,7 +13,7 @@
 }
 
 p {
-  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);;
+  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
   color: var(--color-font);
 }
 
@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.5rem, 1.05rem + 2.25vw, 3.75rem);;
+  font-size: clamp(1.5rem, 1.05rem + 2.25vw, 3.75rem);
 }
 
 h4 {
@@ -38,7 +38,7 @@ h4 {
 
 .container {
   margin: 0 auto;
-  width: 75vw;
+  width: min(80vw, 1400px);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -51,7 +51,7 @@ h4 {
   align-items: center;
   flex-wrap: wrap;
   gap: 6rem;
-  margin: 180px 0 200px 0;
+  margin: max(100px, 10vw) 0;
 }
 
 .about-me > * {
@@ -109,12 +109,12 @@ h4 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 180px 0 200px 0;
+  margin: 0 0 max(100px, 10vw) 0;
 }
 
 .section-header {
   position: relative;
-  margin-bottom: 160px;
+  margin-bottom: max(8vw, 80px);
 }
 
 .icon-header {
@@ -122,7 +122,7 @@ h4 {
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  width: min(10rem, 30vw);
+  width: max(6rem, 8vw);
   fill: var(--color-tertiary);
 }
 
@@ -188,7 +188,7 @@ h4 {
 /* -------------------------------------------------------------------------- */
 
 .design-skills {
-  margin-top: 200px;
+  margin-top: max(100px, 10vw);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,7 +203,6 @@ h4 {
 .skill-text {
   position: relative;
   min-width: 300px;
-  padding: 0 16px;
 }
 
 .bubble_2 {
@@ -232,8 +231,8 @@ h4 {
 }
 
 .skill-icon {
-  width: clamp(5rem, 4.5rem + 2.5vw, 7.5rem);;
-  height: clamp(5rem, 4.5rem + 2.5vw, 7.5rem);;
+  width: clamp(5rem, 4.5rem + 2.5vw, 7.5rem);
+  height: clamp(5rem, 4.5rem + 2.5vw, 7.5rem);
   display: grid;
   place-items: center;
   background-color: white;
@@ -257,7 +256,7 @@ h4 {
   text-align: center;
   box-shadow: 0 0 0 100vmax var(--color-secondary);
   clip-path: inset(0 -100vmax);
-  margin-bottom: 200px;
+  margin-bottom: max(120px, 10vw);
   max-width: 600px;
 }
 
@@ -301,7 +300,7 @@ h4 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 180px 0 200px 0;
+  margin: 0 0 max(100px, 10vw) 0;
 }
 
 .web-content {
@@ -381,7 +380,7 @@ h4 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 180px 0 200px 0;
+  margin: 0 0 max(100px, 10vw) 0;
 }
 
 .creative-content-column {
@@ -409,34 +408,29 @@ h4 {
   border-radius: 8px;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
   .creative-content-column {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
   }
 
-  .skill-tools{
+  .skill-tools {
     justify-content: center;
   }
 
-  .soon{
+  .soon {
     text-align: center;
   }
 }
 
-
-@media only screen and (max-width: 600px){
- .container{
-  width: 90vw;
- }
-
-  .line{
+@media only screen and (max-width: 600px) {
+  .line {
     width: 30px;
     height: 3px;
   }
 
-  .header-text{
-    gap: .5rem;
+  .header-text {
+    gap: 0.5rem;
   }
 }

@@ -13,22 +13,22 @@
 }
 
 p {
-  font-size: clamp(1.25rem, 0.5rem + 1vw, 1.5rem);
+  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);;
   color: var(--color-font);
 }
 
 h2 {
-  font-size: clamp(1.75rem, 1rem + 2vw, 3.75rem);
+  font-size: clamp(1.75rem, 1.35rem + 2vw, 3.75rem);
   color: var(--color-primary);
   text-align: center;
 }
 
 h3 {
-  font-size: clamp(1.5rem, 2rem + 1vw, 3.75rem);
+  font-size: clamp(1.5rem, 1.05rem + 2.25vw, 3.75rem);;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
   margin-top: 0.5rem;
 }
 
@@ -55,7 +55,7 @@ h4 {
 }
 
 .about-me > * {
-  flex: 1 0 45%;
+  flex: 1 0 30%;
 }
 
 .about-me-img {
@@ -202,7 +202,8 @@ h4 {
 
 .skill-text {
   position: relative;
-  min-width: 320px;
+  min-width: 300px;
+  padding: 0 16px;
 }
 
 .bubble_2 {
@@ -231,8 +232,8 @@ h4 {
 }
 
 .skill-icon {
-  width: 120px;
-  height: 120px;
+  width: clamp(5rem, 4.5rem + 2.5vw, 7.5rem);;
+  height: clamp(5rem, 4.5rem + 2.5vw, 7.5rem);;
   display: grid;
   place-items: center;
   background-color: white;
@@ -241,7 +242,8 @@ h4 {
 }
 
 .skill-icon img {
-  width: 72px;
+  width: 60%;
+  max-height: 80px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -249,17 +251,20 @@ h4 {
 /* -------------------------------------------------------------------------- */
 
 .divider {
-  width: 100%;
-  padding: 104px;
+  margin: 0 auto;
+  padding: 104px 0;
   background-color: var(--color-secondary);
   text-align: center;
   box-shadow: 0 0 0 100vmax var(--color-secondary);
   clip-path: inset(0 -100vmax);
   margin-bottom: 200px;
+  max-width: 600px;
 }
 
 .divider h3 {
   color: white;
+  font-size: clamp(1.5rem, 1.1rem + 2vw, 3.5rem);
+  padding: 0 16px;
 }
 
 .divider p {
@@ -401,11 +406,31 @@ h4 {
 .creative-content img {
   width: 100%;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 900px){
+  .creative-content-column {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+  .skill-tools{
+    justify-content: center;
+  }
+
+  .soon{
+    text-align: center;
+  }
 }
 
 
 @media only screen and (max-width: 600px){
+ .container{
+  width: 90vw;
+ }
+
   .line{
     width: 30px;
     height: 3px;

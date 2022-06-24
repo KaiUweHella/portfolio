@@ -1,5 +1,6 @@
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
+const menuItem = document.querySelector('.menu-item');
 let menuOpen = false;
 
 menuBtn.addEventListener('click', () => {
@@ -12,4 +13,10 @@ menuBtn.addEventListener('click', () => {
     menu.classList.remove('active');
     menuOpen = false;
   }
+})
+
+menuItem.addEventListener('click', () => {
+  menuOpen = false;
+  menuBtn.classList.remove('open-menu');
+  menu.classList.remove('active');
 })

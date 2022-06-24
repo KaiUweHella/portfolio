@@ -13,6 +13,15 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 7rem;
+}
+
+a {
+  text-decoration: none;
+}
+
 p {
   font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
   color: var(--color-font);
@@ -40,6 +49,152 @@ h4 {
 .container {
   margin: 0 auto;
   width: min(80vw, 1400px);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+/* -------------------------------------------------------------------------- */
+.navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: min(80vw, 1400px);
+  z-index: 1000;
+}
+
+.logo {
+  width: clamp(7.5rem, 6.75rem + 3.75vw, 11.25rem);
+}
+
+.menu {
+  background: linear-gradient(303deg, #5cad8d 0%, #a0cfbc 100%);
+  width: 56px;
+  height: 56px;
+  border-radius: 100vmax;
+}
+
+.header-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.header-img {
+  position: relative;
+  width: clamp(50rem, 47.5rem + 12.5vw, 62.5rem);
+}
+
+.header-container::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: clamp(37.5rem, 35rem + 12.5vw, 50rem);
+  height: clamp(37.5rem, 35rem + 12.5vw, 50rem);
+  border-radius: 100vmax;
+  background: transparent linear-gradient(46deg, #c1c1c1 0%, #ffffff 100%);
+}
+
+header {
+  background-color: #efefef;
+}
+
+.bubble_6 {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  bottom: 20%;
+  left: 20%;
+}
+
+.bubble_6::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  bottom: -150%;
+  left: 100%;
+  width: 96px;
+  height: 96px;
+  background: linear-gradient(303deg, #5cad8d 0%, #a0cfbc 100%);
+}
+
+.bubble_6::before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  bottom: 150%;
+  left: -20%;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(303deg, #5cad8d 0%, #a0cfbc 100%);
+}
+
+.header-overlay{
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: min(80vw, 1400px);
+}
+
+.nav-column{
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.nav-item:nth-child(2){
+  align-self: flex-start;
+  margin: 0 -16px;
+}
+.nav-item:nth-child(3){
+  align-self: flex-end;
+}
+
+.nav-item p{
+  color: var(--color-primary);
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 8px;
+}
+
+.nav-item-circle {
+  background: linear-gradient(303deg, #5cad8d 0%, #a0cfbc 100%);
+  width: 176px;
+  height: 176px;
+  border-radius: 100vmax;
+  display: grid;
+  place-items: center;
+  transition: all 250ms ease-in-out;
+}
+
+.nav-item-circle svg {
+  width: 100px;
+  fill: white;
+  transition: all 250ms ease-in-out;
+}
+
+.nav-item:hover .nav-item-circle{
+  background: linear-gradient(303deg, white 0%, white 100%);
+}
+
+.nav-item:hover .nav-item-circle svg{
+fill: var(--color-primary);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -404,14 +559,14 @@ h4 {
 .creative-content img {
   width: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 /* -------------------------------------------------------------------------- */
 /*                                Overlay Links                               */
 /* -------------------------------------------------------------------------- */
 
-.overlay-links{
+.overlay-links {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -427,31 +582,36 @@ h4 {
   transition: opacity 250ms ease-in-out;
 }
 
-.overlay-links:hover{
+.overlay-links:hover {
   opacity: 1;
 }
 
-.overlay-links svg{
+.overlay-links svg {
   width: clamp(3.75rem, 3rem + 3.75vw, 7.5rem);
   fill: white;
 }
 
-.overlay-links a{
+.overlay-links a {
   opacity: 0.8;
   transition: all 150ms ease-in-out;
 }
 
 .overlay-links a:hover {
- opacity: 1;
- transform: scale(1.025);
+  opacity: 1;
 }
 
-.vertical-line{
+.vertical-line {
   opacity: 0.8;
   border-radius: 100vmax;
   width: 4px;
   height: clamp(3.75rem, 3rem + 3.75vw, 7.5rem);
   background-color: white;
+}
+
+.creative-overlay-text {
+  color: white;
+  font-size: clamp(1rem, 0.7rem + 1.5vw, 2.5rem);
+  font-weight: 800;
 }
 
 /* -------------------------------------------------------------------------- */

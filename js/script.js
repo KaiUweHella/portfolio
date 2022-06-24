@@ -23,21 +23,29 @@ function loadTools(i) {
   for (let j = 0; j < tools.length; j++) {
     const toolName = tools[j];
     document.getElementById(`tools${i}`).innerHTML += toolsHTML(
-      `../img/tools/${toolName}.svg `
+      `./img/tools/${toolName}.svg `
     );
   }
 }
 
-function showLinks(i) {
+function showOverlay(i) {
   if (projects[i].categorie == "web-development") {
     document.getElementById(`img${i}`).innerHTML += overlayLinksHTML(i);
   }
+  if (projects[i].categorie == "creative") {
+    document.getElementById(`img${i}`).innerHTML += overlayProjectNameHTML(i);
+  }
 }
 
-function hideLinks(i) {
+function hideOverlay(i) {
   if (projects[i].categorie == "web-development") {
     setTimeout(() => {
       document.getElementById(`img${i}`).innerHTML = loadImgHTML(i);
+    }, 250);
+  }
+  if (projects[i].categorie == "creative") {
+    setTimeout(() => {
+      document.getElementById(`img${i}`).innerHTML = creativeImgHTML(i);
     }, 250);
   }
 }

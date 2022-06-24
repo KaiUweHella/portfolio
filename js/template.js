@@ -1,8 +1,8 @@
 function contentBoxHTML(i){
     return /*html*/ `
     <div class="content-box">
-        <div class="content-img" id="img${i}" onmouseleave="hideLinks(${i})">
-            <img onmouseenter="showLinks(${i})"  src="${projects[i].preview_img}" alt="">
+        <div class="content-img" id="img${i}" onmouseleave="hideOverlay(${i})">
+            <img onmouseenter="showOverlay(${i})" src="${projects[i].preview_img}" alt="">
         </div>
         <div>
             <h4>${projects[i].name}</h4>
@@ -23,8 +23,8 @@ function toolsHTML(img){
 
 function creativeImgHTML(i){
  return /*html*/ `
- <div class="creative-img">
-     <img src="${projects[i].preview_img}" alt="">
+ <div class="creative-img" id="img${i}" onmouseleave="hideOverlay(${i})">
+     <img onmouseenter="showOverlay(${i})" src="${projects[i].preview_img}" alt="">
  </div>
  `;
 }
@@ -74,6 +74,14 @@ function overlayLinksHTML(i){
 
 function loadImgHTML(i){
     return /*html*/ `
-    <img  onmouseenter="showLinks(${i})" onmouseleave="hideLinks(${i})" src="${projects[i].preview_img}" alt="">
+    <img  onmouseenter="showOverlay(${i})" src="${projects[i].preview_img}" alt="">
+    `;
+}
+
+function overlayProjectNameHTML(i){
+    return /*html*/ `
+    <div class="overlay-links">
+       <p class="creative-overlay-text">${projects[i].name}</p>
+    </div>
     `;
 }

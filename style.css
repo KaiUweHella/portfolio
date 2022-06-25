@@ -273,7 +273,7 @@ header {
 
 .header-overlay {
   position: absolute;
-  top: 20%;
+  bottom: 10%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -283,7 +283,7 @@ header {
 .nav-column {
   display: flex;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 100px;
   height: clamp(31.25rem, 24.5rem + 11vw, 37.5rem);
 }
 
@@ -690,7 +690,7 @@ header {
 
 .soon {
   font-weight: 800;
-  margin: 24px 0;
+  margin: 20px 0 8px 0;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -827,10 +827,6 @@ header {
   .soon {
     text-align: center;
   }
-
-  .header-overlay {
-    top: 60%;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -851,17 +847,5 @@ header {
   }
   .header-container{
     align-items: flex-start;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  .header-overlay {
-    top: 40%;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  .header-overlay {
-    top: 20%;
   }
 }

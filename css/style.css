@@ -838,6 +838,7 @@ footer {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+  gap: 1rem;
   padding: 2rem;
 }
 
@@ -848,17 +849,14 @@ footer .logo{
 
 .footer-text{
   color: white;
-  padding: 1rem;
 }
 
 ul{
   list-style-type: none;
-  padding: 1rem;
 }
 
 ul a{
   color: white;
-  padding: 1rem;
 }
 
 li{

@@ -114,7 +114,7 @@ h4 {
   height: 3px;
   background-color: white;
   border-radius: 100vmax;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu_burger::before {
@@ -174,7 +174,7 @@ h4 {
   opacity: 1;
 }
 
-.menu-link:hover{
+.menu-link:hover {
   color: var(--color-primary);
 }
 
@@ -334,14 +334,14 @@ header {
   height: 100%;
   border-radius: 100vmax;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   z-index: 1002;
 }
 
 .nav-item-circle svg {
   width: 60%;
   fill: white;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 1003;
 }
 
@@ -503,8 +503,30 @@ header {
   min-width: 300px;
 }
 
+.ui-design-content .content-box:hover .content-img::after {
+  opacity: 1;
+  background-color: var(--color-overlay);
+}
+
 .content-img {
   position: relative;
+}
+
+.ui-design-content .content-img::after {
+  border-radius: 16px;
+  position: absolute;
+  content: "show more";
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+  bottom: 6px;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: var(--color-overlay);
+  transition: all 250ms ease-in-out;
 }
 
 .content-img img {
@@ -841,12 +863,11 @@ header {
   }
 }
 
-
 @media screen and (max-height: 800px) {
   .nav-column {
     display: none;
   }
-  .header-container{
+  .header-container {
     align-items: flex-start;
   }
 }

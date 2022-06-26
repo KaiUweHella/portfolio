@@ -1,5 +1,5 @@
-function contentBoxHTML(i){
-    return /*html*/ `
+function contentBoxHTML(i) {
+  return /*html*/ `
     <div class="content-box">
         <div class="content-img" id="img${i}" onmouseleave="hideOverlay(${i})">
             <img onmouseenter="showOverlay(${i})" src="${projects[i].preview_img}" alt="">
@@ -15,8 +15,8 @@ function contentBoxHTML(i){
     `;
 }
 
-function contentBoxDesignHTML(i){
-    return /*html*/ `
+function contentBoxDesignHTML(i) {
+  return /*html*/ `
     <a href="ui_design.html" class="content-box" onclick="setId(${i})">
         <div class="content-img" id="img${i}">
             <img src="${projects[i].preview_img}" alt="">
@@ -32,24 +32,24 @@ function contentBoxDesignHTML(i){
     `;
 }
 
-function toolsHTML(img){
-    return /*html*/ `
+function toolsHTML(img) {
+  return /*html*/ `
     <img class="tool-icon" src="${img}" alt="">
     `;
 }
 
-function creativeImgHTML(i){
- return /*html*/ `
+function creativeImgHTML(i) {
+  return /*html*/ `
  <div class="creative-img" id="img${i}" onmouseleave="hideOverlay(${i})">
      <img onmouseenter="showOverlay(${i})" src="${projects[i].preview_img}" alt="">
  </div>
  `;
 }
 
-function overlayLinksHTML(i){
-    let linkWebsite = projects[i].link_website;
+function overlayLinksHTML(i) {
+  let linkWebsite = projects[i].link_website;
 
-    return /*html*/ `
+  return /*html*/ `
     <div class="overlay-links">
        <a href="link1" target="_blank">
         <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -89,30 +89,43 @@ function overlayLinksHTML(i){
     `;
 }
 
-function loadImgHTML(i){
-    return /*html*/ `
+function loadImgHTML(i) {
+  return /*html*/ `
     <img  onmouseenter="showOverlay(${i})" src="${projects[i].preview_img}" alt="">
     `;
 }
 
-function overlayProjectNameHTML(i){
-    return /*html*/ `
+function overlayProjectNameHTML(i) {
+  return /*html*/ `
     <div class="overlay-links">
        <p class="creative-overlay-text">${projects[i].name}</p>
     </div>
     `;
 }
 
-function loadImgPreviewHTML(img){
-    return /*html*/ `
-    <img class="preview-img" src="${img}" alt="">
+function loadImgPreviewHTML(img, i) {
+  return /*html*/ `
+    <img class="preview-content-img" onclick="openImage(${i})" class="preview-img" src="${img}" alt="">
     `;
 }
 
-function mockupHeaderHTML(img, name){
-    return /*html*/`
+function mockupHeaderHTML(img, name) {
+  return /*html*/ `
     <img class="header-mockup-img" src="${img}" alt="">
     <div class="dark-overlay"></div>
     <h2 class="preview-name">${name}</h2>
+    `;
+}
+
+function imgOverlayHTML(img, i) {
+  return /*html*/ `
+    <div class="img-info">
+        <img class="icon close-icon" onclick="closeImage(${i})" src="img/icons/close.svg" alt="">
+    </div>
+    <div class="img-change">
+        <img class="arrow-left icon" src="img/icons/arrow_left.svg" alt="" onclick="previousImage(${i})">
+        <img class="arrow-right icon" src="img/icons/arrow_right.svg" alt="" onclick="nextImage(${i})">
+    </div>
+    <img class="overlay-img" src="${img}" alt="">
     `;
 }

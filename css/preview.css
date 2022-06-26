@@ -4,7 +4,7 @@
 }
 
 .header-mockup-img {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   position: relative;
@@ -19,12 +19,11 @@
 }
 
 .dark-overlay {
-  background: black;
+  background-color: var(--color-overlay);
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.5;
 }
 
 .preview-img {
@@ -51,25 +50,101 @@
   flex-flow: column wrap;
 }
 
-.preview-content img {
+.preview-content-img {
+  cursor: pointer;
   width: 100%;
   object-fit: cover;
+  border: 2px solid #efefef;
   border-radius: 16px;
-  margin: .25rem 0;
+  margin: 0.25rem 0;
+  transition: all 250ms ease-in-out;
 }
 
-.preview-logo{
-    fill: white;
+.preview-content-img:hover {
+  transform: scale(1.01);
+  opacity: 0.9;
 }
 
-.preview-container{
-    margin-top: 40px;
+.preview-logo {
+  fill: white;
 }
+
+.preview-container {
+  margin-top: 40px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 img overlay                                */
+/* -------------------------------------------------------------------------- */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-info {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+}
+
+.icon {
+  width: 32px;
+  cursor: pointer;
+}
+
+.d-none {
+  display: none;
+}
+
+.arrow-left,
+.close-icon,
+.arrow-right {
+  opacity: 0.6;
+}
+
+.arrow-left:hover,
+.close-icon:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.img-change {
+  position: absolute;
+  display: flex;
+  left: 16px;
+  right: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay-img {
+  width: min(400px, 80vw);
+  object-fit: cover;
+  border-radius: 16px;
+}
+
 
 @media only screen and (max-width: 900px) {
-    .preview-content-column {
-      -moz-column-count: 2;
-      -webkit-column-count: 2;
-      column-count: 2;
-    }
+  .preview-content-column {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
   }
+}
+
+@media only screen and (max-height: 900px) {
+  .overlay-img {
+    width: auto;
+    height: min(860px, 90vh);
+    object-fit: cover;
+    border-radius: 16px;
+  }
+}

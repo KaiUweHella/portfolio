@@ -15,6 +15,23 @@ function contentBoxHTML(i){
     `;
 }
 
+function contentBoxDesignHTML(i){
+    return /*html*/ `
+    <a href="ui_design.html" class="content-box" onclick="setId(${i})">
+        <div class="content-img" id="img${i}">
+            <img src="${projects[i].preview_img}" alt="">
+        </div>
+        <div>
+            <h4>${projects[i].name}</h4>
+            <p>${projects[i].description}</p>
+            <div class="tools" id="tools${i}">
+                <!-- loaded tools -->
+            </div>
+        </div>
+    </a>
+    `;
+}
+
 function toolsHTML(img){
     return /*html*/ `
     <img class="tool-icon" src="${img}" alt="">
@@ -83,5 +100,19 @@ function overlayProjectNameHTML(i){
     <div class="overlay-links">
        <p class="creative-overlay-text">${projects[i].name}</p>
     </div>
+    `;
+}
+
+function loadImgPreviewHTML(img){
+    return /*html*/ `
+    <img class="preview-img" src="${img}" alt="">
+    `;
+}
+
+function mockupHeaderHTML(img, name){
+    return /*html*/`
+    <img class="header-mockup-img" src="${img}" alt="">
+    <div class="dark-overlay"></div>
+    <h2 class="preview-name">${name}</h2>
     `;
 }

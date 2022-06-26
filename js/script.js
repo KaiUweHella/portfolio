@@ -5,7 +5,7 @@ function init() {
 function loadProjects() {
   for (let i = 0; i < projects.length; i++) {
     if (projects[i].categorie == "ui-design") {
-      document.getElementById("ui-design").innerHTML += contentBoxHTML(i);
+      document.getElementById("ui-design").innerHTML += contentBoxDesignHTML(i);
       loadTools(i);
     }
     if (projects[i].categorie == "web-development") {
@@ -50,3 +50,8 @@ function hideOverlay(i) {
   }
 }
 
+function setId(i){
+  currentID = i;
+  localStorage.setItem('currentID', currentID);
+  console.log(currentID);
+}

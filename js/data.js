@@ -8,6 +8,16 @@ let projects = [
     tools: ["xd"],
     description:
       "Conception and design of an app that allows students to get to know famous artists, architects and designers and their creations.",
+    images: [
+      "img/ui_design/unknown/designer.jpg",
+      "img/ui_design/unknown/designer_werk_1.jpg",
+      "img/ui_design/unknown/designer_ueberblick.jpg",
+      "img/ui_design/unknown/designer_teilen.jpg",
+      "img/ui_design/unknown/deisgner_detail_ansicht.jpg",
+      "img/ui_design/unknown/gemerkte_erzeugnisse.jpg",
+      "img/ui_design/unknown/gemerkte_personen.jpg",
+      "img/ui_design/unknown/profil.jpg",
+    ],
   },
   {
     categorie: "ui-design",
@@ -18,6 +28,14 @@ let projects = [
     tools: ["xd"],
     description:
       "Client project: Redesign of an app for the international online community of the dance scene.",
+    images: [
+      "img/ui_design/eventrava/Carpool_Startseite.png",
+      "img/ui_design/eventrava/Community.png",
+      "img/ui_design/eventrava/Event.png",
+      "img/ui_design/eventrava/Online Classes _Kurs_Ansicht_2.png",
+      "img/ui_design/eventrava/Online_Classes.png",
+      "img/ui_design/eventrava/Profil _Meine_Fotos.png",
+    ],
   },
   {
     categorie: "ui-design",
@@ -28,11 +46,19 @@ let projects = [
     tools: ["xd"],
     description:
       "Conception and design of WC Wanted, the app that helps everyone to always find the perfect toilet on tour.",
+    images: [
+      "img/ui_design/wc_wanted/green_front.jpg",
+      "img/ui_design/wc_wanted/Wc_Profil_Handy.jpg",
+      "img/ui_design/wc_wanted/front.jpg",
+      "img/ui_design/wc_wanted/Fav.jpg",
+      "img/ui_design/wc_wanted/Bewertung_Handy.jpg",
+    ],
   },
   {
     categorie: "web-development",
     name: "Instagram",
-    link_website: "https://kai-uwe-hella.developerakademie.net/insta/index.html",
+    link_website:
+      "https://kai-uwe-hella.developerakademie.net/insta/index.html",
     link_github: null,
     preview_img: "./img/web_development/insta.jpg",
     tools: ["javascript", "html", "css"],
@@ -42,7 +68,8 @@ let projects = [
   {
     categorie: "web-development",
     name: "Lieferando",
-    link_website: "https://kai-uwe-hella.developerakademie.net/lieferando/index.html",
+    link_website:
+      "https://kai-uwe-hella.developerakademie.net/lieferando/index.html",
     link_github: null,
     preview_img: "./img/web_development/lieferando.jpg",
     tools: ["javascript", "html", "css"],
@@ -52,7 +79,8 @@ let projects = [
   {
     categorie: "web-development",
     name: "Notes",
-    link_website: "https://kai-uwe-hella.developerakademie.net/notiz_app/index.html",
+    link_website:
+      "https://kai-uwe-hella.developerakademie.net/notiz_app/index.html",
     link_github: null,
     preview_img: "./img/web_development/notes.jpg",
     tools: ["javascript", "html", "css"],
@@ -62,7 +90,8 @@ let projects = [
   {
     categorie: "web-development",
     name: "QuizApp",
-    link_website: "https://kai-uwe-hella.developerakademie.net/quiz_app/index.html",
+    link_website:
+      "https://kai-uwe-hella.developerakademie.net/quiz_app/index.html",
     link_github: null,
     preview_img: "./img/web_development/quizapp.jpg",
     tools: ["javascript", "html", "css"],
@@ -72,7 +101,8 @@ let projects = [
   {
     categorie: "web-development",
     name: "Pokedex",
-    link_website: "https://kai-uwe-hella.developerakademie.net/pokedex/index.html",
+    link_website:
+      "https://kai-uwe-hella.developerakademie.net/pokedex/index.html",
     link_github: null,
     preview_img: "./img/web_development/pokedex.jpg",
     tools: ["javascript", "html", "css", "xd", "api"],

@@ -48,10 +48,11 @@ function creativeImgHTML(i) {
 
 function overlayLinksHTML(i) {
   let linkWebsite = projects[i].link_website;
+  let linkGithub = projects[i].link_github;
 
   return /*html*/ `
     <div class="overlay-links">
-       <a href="link1" target="_blank">
+       <a href="${linkGithub}" target="_blank">
         <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	        viewBox="0 0 32.6 31.8" xml:space="preserve">
         <path class="st0" d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8

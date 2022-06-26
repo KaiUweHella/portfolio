@@ -5,6 +5,7 @@
   --color-font: #262626;
   --color-overlay: hsla(156, 33%, 52%, 0.8);
   --color-grey: #c1c1c1;
+  --color-gradient: linear-gradient(303deg, #5cad8d 0%, #a0cfbc 100%);
 }
 
 * {
@@ -823,6 +824,48 @@ header {
 .creative-overlay-text {
   color: white;
   font-size: clamp(1rem, 0.7rem + 1.5vw, 2.5rem);
+  font-weight: 800;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
+
+footer {
+  background: var(--color-gradient);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+footer .logo{
+  fill: white;
+  cursor: pointer;
+}
+
+.footer-text{
+  color: white;
+  padding: 1rem;
+}
+
+ul{
+  list-style-type: none;
+  padding: 1rem;
+}
+
+ul a{
+  color: white;
+  padding: 1rem;
+}
+
+li{
+  cursor: pointer;
+}
+
+li:hover{
   font-weight: 800;
 }
 

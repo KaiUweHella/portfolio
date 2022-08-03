@@ -79,8 +79,7 @@ let projects = [
   {
     categorie: "web-development",
     name: "Notes",
-    link_website:
-      "https://kai-uwe-hella.developerakademie.net/notiz_app/index.html",
+    link_website: "https://www.notes.pumuk.de/",
     link_github: "https://github.com/KaiUweHella/notes.git",
     preview_img: "./img/web_development/notes.jpg",
     tools: ["javascript", "html", "css"],
@@ -90,8 +89,7 @@ let projects = [
   {
     categorie: "web-development",
     name: "QuizApp",
-    link_website:
-      "https://kai-uwe-hella.developerakademie.net/quiz_app/index.html",
+    link_website: "https://www.quizapp.pumuk.de/",
     link_github: "https://github.com/KaiUweHella/QuizApp.git",
     preview_img: "./img/web_development/quizapp.jpg",
     tools: ["javascript", "html", "css"],
@@ -101,13 +99,22 @@ let projects = [
   {
     categorie: "web-development",
     name: "Pokedex",
-    link_website:
-      "https://kai-uwe-hella.developerakademie.net/pokedex/index.html",
+    link_website: "http://www.pokedex.pumuk.de/",
     link_github: "https://github.com/KaiUweHella/Pokedex.git",
     preview_img: "./img/web_development/pokedex.jpg",
     tools: ["javascript", "html", "css", "xd", "api"],
     description:
       "Based on the pokeapi, this project was implemented with a lot of love for the design and the greatest possible use of the API.",
+  },
+  {
+    categorie: "web-development",
+    name: "Sharky",
+    link_website: "http://www.pokedex.pumuk.de/sharky/index.html",
+    link_github: "https://github.com/KaiUweHella/sharky.git",
+    preview_img: "./img/web_development/sharky.jpg",
+    tools: ["javascript", "html", "css"],
+    description:
+      "The first time used the object-oriented approach with JavaScript for a project. The minigame can be played on the web or on any mobile device.",
   },
   {
     categorie: "creative",
